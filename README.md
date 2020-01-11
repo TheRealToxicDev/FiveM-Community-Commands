@@ -4,7 +4,7 @@
 > - Append "start servercommands" in your server.cfg
 
 **Save and Profit, Nice and simple 😁** 
-
+━━━━━━━━━━━━━━━━━━━━
 # Enable FiveMToDiscord Logs Support
 - Find this line 
 
@@ -21,3 +21,4 @@
 THIS NEEDS TO BE DONE FOR MULTIPLE LINES.
 
 - **Save and Profit**
+━━━━━━━━━━━━━━━━━━━━
