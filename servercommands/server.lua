@@ -77,7 +77,7 @@ PerformHttpRequest('https://raw.githubusercontent.com/toxic-developer/CommunityC
 		print('## Current Version: ' .. CurrentVersion)
 		print('## Newest Version: ' .. NewestVersion)
 		print('##')
-		if CurrentVersion = NewestVersion then
+		if CurrentVersion <= NewestVersion then
 			print('## Community Commands Up to date!')
 			print('##############')	
                  else
