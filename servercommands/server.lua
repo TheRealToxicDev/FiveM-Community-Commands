@@ -103,7 +103,7 @@ end
 
 -- Version Checking down here, better don't touch this
 -- Will throw an error if your version is outdated
-local CurrentVersion = '1.0.0'
+local CurrentVersion = '1.0.1'
 local GithubResourceName = 'Community Commands'
 
 PerformHttpRequest('https://raw.githubusercontent.com/toxic-developer/CommunityCommands/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
