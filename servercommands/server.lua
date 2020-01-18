@@ -115,7 +115,7 @@ PerformHttpRequest('https://raw.githubusercontent.com/toxic-developer/CommunityC
 		print('## Current Version: ' .. CurrentVersion)
 		print('## Newest Version: ' .. NewestVersion)
 		print('##')
-		if CurrentVersion <= NewestVersion then
+		if CurrentVersion ~= NewestVersion then
                         print('## Community Commands Outdated')
 			print('## Check the GitHub releases')
 			print('## For the newest Version!')
@@ -123,7 +123,7 @@ PerformHttpRequest('https://raw.githubusercontent.com/toxic-developer/CommunityC
 			print('##############')
 			print('CHANGES: ' .. Changes)	
                  else
-                        print('## Community Commands Up to date!')
+                        print('## Up to date!')
 			print('##############')	
                  end
 		print('\n')
