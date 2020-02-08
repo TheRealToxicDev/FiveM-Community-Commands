@@ -37,6 +37,12 @@ AddEventHandler('chatMessage', function(source, name, msg)
 		TriggerClientEvent('chatMessage', -1, "^8(911) | ^7" .. name, { 255, 255, 255 }, string.sub(msg,5))
                 --[[ TriggerEvent('DiscordBot:ToDiscord', 'chat', GetPlayerName(id) .. ' [ID: ' .. GetPlayerServerId(id) .. ']', data.message, 'steam', GetPlayerServerId(id), false, true) ]]	
 	end
+        
+        if sm[1] == "/devannounce" then
+                CancelEvent()
+                TriggerClientEvent("chatMessage", -1, "^3Dev Announcement", {255, 255, 255}, string.sub(msg,6))
+                --[[ TriggerEvent('DiscordBot:ToDiscord', 'chat', GetPlayerName(id) .. ' [ID: ' .. GetPlayerServerId(id) .. ']', data.message, 'steam', GetPlayerServerId(id), false, true) ]]	
+    end
 
 	if sm[1] == "/news" then
         CancelEvent()
