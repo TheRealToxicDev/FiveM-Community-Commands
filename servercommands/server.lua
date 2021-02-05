@@ -17,7 +17,7 @@ AddEventHandler('chatMessage', function(source, name, msg)
 	if sm[1] == "/ooc" then
 		CancelEvent()
 		TriggerClientEvent('chatMessage', -1, "^6OOC | ^7" .. name, { 128, 128, 128 }, string.sub(msg,5))
-                --[[ TriggerEvent('DiscordBot:ToDiscord', 'chat', GetPlayerName(id) .. ' [ID: ' .. GetPlayerServerId(id) .. ']', data.message, 'steam', GetPlayerServerId(id), false, tru
+                --[[ TriggerEvent('DiscordBot:ToDiscord', 'chat', GetPlayerName(id) .. ' [ID: ' .. GetPlayerServerId(id) .. ']', data.message, 'steam', GetPlayerServerId(id), false, true ]]
 	end
 
 	if sm[1] == "/me" then
